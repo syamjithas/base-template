@@ -1,0 +1,14 @@
+{
+  "public": ".\\build\\",
+  "headers": [
+    {
+      "source": "**/*.@(js|svg|css|jpg|jpeg|gif|png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=7200"
+        }
+      ]
+    }
+  ]
+}
