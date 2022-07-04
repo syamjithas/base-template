@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 
 const App = React.lazy(() => import("./App"));
 
-var nativeElement: any = document.getElementById('init-loader');
+const nativeElement: any = document.getElementById('init-loader');
 nativeElement.remove();
 
 function Root() {
