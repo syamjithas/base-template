@@ -1,15 +1,15 @@
 import React, { Suspense } from "react";
+import { removeElementFromDOM } from './utils/'
+import { FullscreenLoader } from "./components";
+const App = React.lazy(() => import("./views/app/App"));
 
-const App = React.lazy(() => import("./App"));
-
-const nativeElement: any = document.getElementById('init-loader');
-nativeElement.remove();
+removeElementFromDOM();
 
 function Root() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-    <App />
-  </Suspense>
+    <Suspense fallback={<FullscreenLoader />}>
+      <App />
+    </Suspense>
   );
 }
 

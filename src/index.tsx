@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Root from './Root';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import { serviceWorkerRegistration } from './utils/';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
