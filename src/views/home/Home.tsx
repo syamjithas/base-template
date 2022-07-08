@@ -1,7 +1,13 @@
+import { Navigation, Footer } from '../../components/'
 
 export const Home = () => {
     return (
-        <h1>Home</h1>
+        <>
+            <Navigation />
+            <h1>Home</h1>
+            <Footer />
+        </>
+
     )
 }
 
