@@ -1,7 +1,6 @@
 
 export const Navigation = () => {
-    return (
+  return (
         <div>Navigation</div>
-    )
+  )
 }
-

@@ -1,17 +1,16 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react'
 import { removeElementFromDOM } from './utils/'
-import { FullscreenLoader } from "./components";
-const App = React.lazy(() => import("./views/app/App"));
+import { FullscreenLoader } from './components'
+const App = React.lazy(() => import('./views/app/App'))
 
-removeElementFromDOM();
+removeElementFromDOM()
 
-function Root() {
+function Root () {
   return (
     <Suspense fallback={<FullscreenLoader />}>
       <App />
     </Suspense>
-  );
+  )
 }
 
-
-export default Root;
+export default Root

@@ -1,8 +1,6 @@
 
-
 export const Payment = () => {
-    return (
+  return (
         <div>Payment</div>
-    )
+  )
 }
-
