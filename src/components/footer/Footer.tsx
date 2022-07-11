@@ -1,6 +1,4 @@
-
+import './style.scss'
 export const Footer = () => {
-  return (
-        <div>Footer</div>
-  )
+  return <h1>Footer</h1>
 }

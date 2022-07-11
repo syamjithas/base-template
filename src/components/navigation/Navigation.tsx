@@ -1,6 +1,4 @@
-
+import './style.scss'
 export const Navigation = () => {
-  return (
-        <div>Navigation</div>
-  )
+  return <h1>Navigation</h1>
 }
